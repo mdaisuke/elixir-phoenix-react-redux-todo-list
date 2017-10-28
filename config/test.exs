@@ -11,9 +11,9 @@ config :logger, level: :warn
 
 # Configure your database
 config :todo_test, TodoTest.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "",
   database: "todo_test_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

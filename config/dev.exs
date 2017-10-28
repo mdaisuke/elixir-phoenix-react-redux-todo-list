@@ -50,9 +50,9 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :todo_test, TodoTest.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "dev",
-  password: "password",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "",
   database: "todo_test_dev",
   hostname: "localhost",
   pool_size: 10
